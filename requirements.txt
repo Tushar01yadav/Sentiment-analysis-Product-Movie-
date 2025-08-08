@@ -2,3 +2,4 @@ transformers
 streamlit 
 scikit-learn
 nltk 
+torch
