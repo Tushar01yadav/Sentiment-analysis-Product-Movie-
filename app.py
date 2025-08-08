@@ -1,7 +1,7 @@
 import pickle
 import streamlit as st
 from transformers import AutoModelForSequenceClassification, AutoTokenizer, pipeline
-
+import time 
 
 
 # Custom CSS for fancy background and styling
@@ -84,6 +84,8 @@ def load_hf_pipeline():
 
 
 if analyze:
+    with st.spinner('Analyzing...'):
+     time.sleep(1)
     if review.strip() == "":
         st.warning("Please enter a review to analyze.")
     elif model_option == "Model 1: Hugging Face":
