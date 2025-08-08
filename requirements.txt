@@ -1,0 +1,5 @@
+transformers
+streamlit 
+pickle 
+scikit-learn
+nltk 

@@ -1,7 +1,6 @@
 import pickle
 import streamlit as st
 from transformers import AutoModelForSequenceClassification, AutoTokenizer, pipeline
-import joblib
 
 
 
